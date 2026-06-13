@@ -78,7 +78,7 @@ export default function HeroSection() {
             <ArrowDown size={16} />
           </a>
           <a
-            href="/resume.pdf"
+            href={`${process.env.__NEXT_ROUTER_BASEPATH || ''}/resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-xl font-medium text-text-primary border border-glass-border hover:border-accent-cyan/40 hover:bg-glass-bg transition-all min-h-[44px] flex items-center gap-2"
