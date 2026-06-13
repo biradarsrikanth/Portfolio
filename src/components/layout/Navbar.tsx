@@ -94,7 +94,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/resume.pdf"
+              href={`${process.env.__NEXT_ROUTER_BASEPATH || ''}/resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-1.5 rounded-lg text-sm font-medium bg-accent-cyan/10 text-accent-cyan border border-accent-cyan/30 hover:bg-accent-cyan/20 transition-colors"
@@ -130,7 +130,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/resume.pdf"
+              href={`${process.env.__NEXT_ROUTER_BASEPATH || ''}/resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-lg text-sm font-medium bg-accent-cyan/10 text-accent-cyan border border-accent-cyan/30 text-center min-h-[44px] flex items-center justify-center"

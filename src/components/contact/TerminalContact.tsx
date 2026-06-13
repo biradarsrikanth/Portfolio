@@ -126,7 +126,7 @@ export default function TerminalContact() {
                 <span className="text-accent-cyan">→</span>
                 <span className="text-text-dim w-16">Resume</span>
                 <a
-                  href="/resume.pdf"
+                  href={`${process.env.__NEXT_ROUTER_BASEPATH || ''}/resume.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-text-primary hover:text-accent-cyan transition-colors flex items-center gap-2 min-h-[44px]"
